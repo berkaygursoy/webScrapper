@@ -1,4 +1,18 @@
-# Headline Scraper
+# Web Scraper
+
+Web sitelerinden otomatik veri çekme ve Excel formatında kaydetme için geliştirilmiş profesyonel bir Python kütüphanesi. Haber başlıkları, ürün bilgileri veya her türlü web içeriğini kolayca çıkarır.
+
+Anahtar Kelimeler: web-scraping, python, beautifulsoup, excel-export, automation
+
+🖼️ Demo & Görsel
+Proje Ekran Görüntüsü
+Örnek web sayfasından çekilen verilerin Excel çıktısı
+✨ Özellikler
+🚀 Hızlı Veri Çekme: Çoklu sayfa desteği ile yüksek performans
+📊 Excel Entegrasyonu: Pandas ile profesyonel Excel çıktıları
+🛡️ Hata Yönetimi: Otomatik yeniden deneme ve hata toleransı
+⚙️ Esnek Yapılandırma: Özelleştirilebilir scraping kuralları
+🔍 Akıllı Parsing: BeautifulSoup ile gelişmiş HTML analizi
 
 Modern web scraping tool that extracts headlines from HaberTürk's homepage and exports them to an Excel file.
 
