@@ -5,7 +5,6 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/berkaygursoy/webScrapper?style=social)](https://github.com/berkaygursoy/webScrapper/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/berkaygursoy/webScrapper?style=social)](https://github.com/berkaygursoy/webScrapper/network/members)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
 
