@@ -87,7 +87,7 @@ It demonstrates the power of **requests**, **BeautifulSoup**, and **pandas** for
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your‑username>/web-scraper.git
+   git clone https://github.com/berkaygursoy/web-scraper.git
    cd web-scraper
 2. **Create a virtual environment (recommended)**
    
