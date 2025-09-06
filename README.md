@@ -6,11 +6,11 @@ Anahtar Kelimeler: web-scraping, python, beautifulsoup, excel-export, automation
 
 ## Özellikler
 
--🚀 Hızlı Veri Çekme: Çoklu sayfa desteği ile yüksek performans
--📊 Excel Entegrasyonu: Pandas ile profesyonel Excel çıktıları
--🛡️ Hata Yönetimi: Otomatik yeniden deneme ve hata toleransı
--⚙️ Esnek Yapılandırma: Özelleştirilebilir scraping kuralları
--🔍 Akıllı Parsing: BeautifulSoup ile gelişmiş HTML analizi
+- 🚀 Hızlı Veri Çekme: Çoklu sayfa desteği ile yüksek performans
+- 📊 Excel Entegrasyonu: Pandas ile profesyonel Excel çıktıları
+- 🛡️ Hata Yönetimi: Otomatik yeniden deneme ve hata toleransı
+- ⚙️ Esnek Yapılandırma: Özelleştirilebilir scraping kuralları
+- 🔍 Akıllı Parsing: BeautifulSoup ile gelişmiş HTML analizi
 
 Modern web scraping tool that extracts headlines from HaberTürk's homepage and exports them to an Excel file.
 
