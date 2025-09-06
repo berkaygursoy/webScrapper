@@ -1,123 +1,97 @@
-# Web Scraper
+# 🕸️ **Web Scraper** – Python ile Web Veri Çekme
 
-Web sitelerinden otomatik veri çekme ve Excel formatında kaydetme için geliştirilmiş profesyonel bir Python kütüphanesi. Haber başlıkları, ürün bilgileri veya her türlü web içeriğini kolayca çıkarır.
+> “Basit bir script ile web sitelerinden veri çıkarıp Excel’e dönüştürün.”  
+> Version: **1.0.0**
 
-Anahtar Kelimeler: web-scraping, python, beautifulsoup, excel-export, automation
+[![GitHub stars](https://img.shields.io/github/stars/berkaygursoy/webScrapper?style=social)](https://github.com/berkaygursoy/webScrapper/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/berkaygursoy/webScrapper?style=social)](https://github.com/berkaygursoy/webScrapper/network/members)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Özellikler
+---
 
-- 🚀 Hızlı Veri Çekme: Çoklu sayfa desteği ile yüksek performans
-- 📊 Excel Entegrasyonu: Pandas ile profesyonel Excel çıktıları
-- 🛡️ Hata Yönetimi: Otomatik yeniden deneme ve hata toleransı
-- ⚙️ Esnek Yapılandırma: Özelleştirilebilir scraping kuralları
-- 🔍 Akıllı Parsing: BeautifulSoup ile gelişmiş HTML analizi
+## 📖 Proje Açıklaması
 
-Modern web scraping tool that extracts headlines from HaberTürk's homepage and exports them to an Excel file.
+Python, **BeautifulSoup** ve **Pandas** kullanarak bir web sayfasından veri çekip bu veriyi Excel dosyasına kaydeden minimalist bir kütüphane.  
+Başlıklar, ürün listeleri veya herhangi bir HTML içeriği hızlıca çıkarılabilir.
 
-## Features
+---
 
-- ✅ Dynamic HTML parsing with BeautifulSoup
-- ✅ Error handling for network issues and website structure changes
-- ✅ Clear output formatting in console and Excel
-- ✅ Uses proper HTTP headers to mimic legitimate browser traffic
-- ✅ Tracks source and timestamps data
-- 📊 Well-formatted Excel export compatible with modern spreadsheet applications
+## ✨ Öne Çıkan Özellikler
 
-## Installation & Requirements
+| # | Özellik | Açıklama |
+|---|---------|----------|
+| 1️⃣ | **Hızlı Scraping** | Tek satır kodla veri çekme. |
+| 2️⃣ | **Excel Dışa Aktarımı** | Pandas ile `.xlsx` dosyası oluşturma. |
+| 3️⃣ | **Esnek Seçiciler** | `tag`, `class`, `id` gibi seçimler desteklenir. |
+| 4️⃣ | **Hata Yönetimi** | Otomatik yeniden deneme ve zaman aşımı ayarı. |
 
-To use this script, you'll need:
+---
 
-1. Python 3.7+
-2. Required libraries:
-   - requests (`pip install requests`)
-   - beautifulsoup4 (`pip install beautifulsoup4`)
-   - pandas (`pip install pandas`)
+## ⚙️ Hızlı Kurulum
 
-Install all dependencies with:
 ```bash
-pip install requests beautifulsoup4 pandas openpyxl
+# 1. Depoyu klonla
+git clone https://github.com/berkaygursoy/webScrapper.git
+cd webScrapper
 
+# 2. Sanal ortam oluştur (isteğe bağlı)
+python -m venv .venv && source .venv/bin/activate   # Linux/Mac
+# veya
+.\.venv\Scripts\activate                          # Windows
 
-## Usage
+# 3. Gerekli paketleri yükle
+pip install -r requirements.txt
 
-Save the code in a file named haberturk_scraper.py
-Run the script from command line:
-python haberturk_scraper.py
-The scraped headlines will be saved to an Excel file named haberturk_headlines.xlsx](https://img.shields.io/badge/Python-3.8%252B-blue
-https://img.shields.io/badge/License-MIT-green
-https://img.shields.io/badge/Status-Active-brightgreen
-
-Bu proje, web sayfalarından veri çekip Excel formatında kaydeden Python tabanlı bir uygulamadır.
-
-📋 Proje Açıklaması
-Python'un requests, BeautifulSoup ve pandas kütüphanelerini kullanarak web sayfalarından veri çeken ve bu verileri Excel formatında kaydeden bir script.
-
-🚀 Özellikler
-🌐 Web sayfalarından HTTP istekleri ile içerik çekme
-
-🧹 BeautifulSoup ile HTML içeriğini ayrıştırma
-
-📊 Pandas ile veri işleme ve düzenleme
-
-💾 Excel formatında veri kaydetme
-
-⚡ Hızlı ve etkili veri işleme
-
-📦 Kurulum
-
-Gereksinimler
-Python 3.8+
-pip (Python paket yöneticisi)
-
-🛠️ Kullanım
-
-Temel Kullanım
-
+# 4. Çalıştır
 python scraper.py
-Özelleştirme
-Kodu farklı web siteleri için özelleştirmek için aşağıdaki değişkenleri düzenleyebilirsiniz:
 
-python
-# URL'yi değiştirin
-url = "https://hedef-site.com/"
+```
+# Web Scraper Project
 
-# Farklı HTML elementleri kullanın
-basliks = soup.find_all("h1")  # veya "h2", "h3", "div", etc.
+A lightweight Python script that scrapes headline titles from a website and stores them in an Excel file.  
+It demonstrates the power of **requests**, **BeautifulSoup**, and **pandas** for quick data extraction and export.
 
-# Farklı çıktı formatları
-df.to_csv("sonuclar.csv", index=False)  # CSV formatında kaydetme
+---
 
-📁 Dosya Yapısı
+## 📌 Overview
 
-web-scraping-project/
-│
-├── scraper.py                 # Ana scraping scripti
-├── requirements.txt           # Bağımlılıklar
-├── example_basliklar.xlsx     # Örnek çıktı dosyası
-├── README.md                  # Bu dosya
-└── .gitignore                 # Git ignore dosyası
+- **Purpose:** Pull article headlines (or any other text) from a given URL and save them as an `.xlsx` spreadsheet.
+- **Use‑case:** News aggregation, content monitoring, research data collection, etc.
+- **Why it matters:** No heavy frameworks needed—just three popular libraries.
 
-📝 Örnek Çıktı
+---
 
-Çalıştırma sonrasında aşağıdaki gibi bir çıktı alacaksınız:
-Haber başlıkları 'example_basliklar.xlsx' dosyasına kaydedildi.
-Oluşturulan Excel dosyası şu şekilde görünecektir:
+## ✨ Key Features
 
-Başlıklar
+| Feature | Description |
+|---------|-------------|
+| **Simple HTTP Requests** | Uses `requests` to fetch page content. |
+| **HTML Parsing** | BeautifulSoup parses the DOM and extracts `<span>` tags (customizable). |
+| **DataFrame Creation** | Pandas converts the list of titles into a structured DataFrame. |
+| **Excel Export** | `to_excel()` writes data to an Excel file (`openpyxl` handles the format). |
+| **Modular Code** | Easily replace tag names, attributes, or output paths. |
 
-İlk haber başlığı
-İkinci haber başlığı
-Üçüncü haber başlığı
-🔧 Geliştirme
+---
 
-Bağımlılıklar
+## 🛠️ Technologies
 
-Proje şu kütüphanelere bağlıdır:
+- Python 3.x
+- [requests](https://pypi.org/project/requests/)
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
+- pandas
+- openpyxl (dependency of `pandas.to_excel`)
 
-requests - HTTP istekleri için
+---
 
-beautifulsoup4 - HTML ayrıştırma için
+## 🚀 Installation
 
-pandas - Veri işleme için
+1. **Clone the repository**
 
-openpyxl - Excel çıktıları için
+   ```bash
+   git clone https://github.com/<your‑username>/web-scraper.git
+   cd web-scraper
+2. **Create a virtual environment (recommended)**
+   
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate      # Windows: .\.venv\Scripts\activate
